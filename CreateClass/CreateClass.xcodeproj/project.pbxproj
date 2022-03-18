@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		631C4F6327E43A23005332AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F6227E43A23005332AD /* main.m */; };
 		631C4F6B27E43A4A005332AD /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F6A27E43A4A005332AD /* Animal.m */; };
+		631C4F6E27E47FD0005332AD /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F6D27E47FD0005332AD /* Dog.m */; };
+		631C4F7127E48139005332AD /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F7027E48139005332AD /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		631C4F6227E43A23005332AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		631C4F6927E43A4A005332AD /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		631C4F6A27E43A4A005332AD /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		631C4F6C27E47FD0005332AD /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		631C4F6D27E47FD0005332AD /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		631C4F6F27E48139005332AD /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		631C4F7027E48139005332AD /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,10 @@
 		631C4F5627E43A23005332AD = {
 			isa = PBXGroup;
 			children = (
+				631C4F6F27E48139005332AD /* Cat.h */,
+				631C4F7027E48139005332AD /* Cat.m */,
+				631C4F6C27E47FD0005332AD /* Dog.h */,
+				631C4F6D27E47FD0005332AD /* Dog.m */,
 				631C4F6927E43A4A005332AD /* Animal.h */,
 				631C4F6A27E43A4A005332AD /* Animal.m */,
 				631C4F6127E43A23005332AD /* CreateClass */,
@@ -124,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631C4F7127E48139005332AD /* Cat.m in Sources */,
+				631C4F6E27E47FD0005332AD /* Dog.m in Sources */,
 				631C4F6327E43A23005332AD /* main.m in Sources */,
 				631C4F6B27E43A4A005332AD /* Animal.m in Sources */,
 			);
