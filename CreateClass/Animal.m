@@ -20,7 +20,7 @@
     return self;
 }
 +(void)run{
-    NSLog(@"animal run");
+    NSLog(@"animal run!");
 }
 -(void)eat{
     NSLog(@"animal eat");
