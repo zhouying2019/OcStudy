@@ -6,11 +6,12 @@
 //
 
 #import "Animal.h"
-
+#import "SwimProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Dog : Animal
+@interface Dog : Animal<SwimProtocol>
 -(void)eat;
++(void)run;
 @end
 
 NS_ASSUME_NONNULL_END

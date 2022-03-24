@@ -12,6 +12,9 @@
 		631C4F6E27E47FD0005332AD /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F6D27E47FD0005332AD /* Dog.m */; };
 		631C4F7127E48139005332AD /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F7027E48139005332AD /* Cat.m */; };
 		631C4F7427E49F3D005332AD /* TwoSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 631C4F7327E49F3D005332AD /* TwoSum.m */; };
+		84F74D1A27EC0A230065B6B5 /* Animal+TestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F74D1927EC0A230065B6B5 /* Animal+TestCategory.m */; };
+		84F74D1D27EC1AAE0065B6B5 /* Dog+addSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F74D1C27EC1AAE0065B6B5 /* Dog+addSound.m */; };
+		84F74D2227EC57250065B6B5 /* Cat+AddClimb.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F74D2127EC57250065B6B5 /* Cat+AddClimb.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +40,13 @@
 		631C4F7027E48139005332AD /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		631C4F7227E49F3D005332AD /* TwoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
 		631C4F7327E49F3D005332AD /* TwoSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoSum.m; sourceTree = "<group>"; };
+		84F74D1827EC0A230065B6B5 /* Animal+TestCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+TestCategory.h"; sourceTree = "<group>"; };
+		84F74D1927EC0A230065B6B5 /* Animal+TestCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+TestCategory.m"; sourceTree = "<group>"; };
+		84F74D1B27EC1AAE0065B6B5 /* Dog+addSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dog+addSound.h"; sourceTree = "<group>"; };
+		84F74D1C27EC1AAE0065B6B5 /* Dog+addSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Dog+addSound.m"; sourceTree = "<group>"; };
+		84F74D1F27EC4A120065B6B5 /* SwimProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwimProtocol.h; sourceTree = "<group>"; };
+		84F74D2027EC57250065B6B5 /* Cat+AddClimb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat+AddClimb.h"; sourceTree = "<group>"; };
+		84F74D2127EC57250065B6B5 /* Cat+AddClimb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cat+AddClimb.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +63,19 @@
 		631C4F5627E43A23005332AD = {
 			isa = PBXGroup;
 			children = (
+				84F74D2027EC57250065B6B5 /* Cat+AddClimb.h */,
+				84F74D2127EC57250065B6B5 /* Cat+AddClimb.m */,
+				84F74D1F27EC4A120065B6B5 /* SwimProtocol.h */,
+				84F74D1827EC0A230065B6B5 /* Animal+TestCategory.h */,
+				84F74D1927EC0A230065B6B5 /* Animal+TestCategory.m */,
 				631C4F7227E49F3D005332AD /* TwoSum.h */,
 				631C4F7327E49F3D005332AD /* TwoSum.m */,
 				631C4F6F27E48139005332AD /* Cat.h */,
 				631C4F7027E48139005332AD /* Cat.m */,
 				631C4F6C27E47FD0005332AD /* Dog.h */,
 				631C4F6D27E47FD0005332AD /* Dog.m */,
+				84F74D1B27EC1AAE0065B6B5 /* Dog+addSound.h */,
+				84F74D1C27EC1AAE0065B6B5 /* Dog+addSound.m */,
 				631C4F6927E43A4A005332AD /* Animal.h */,
 				631C4F6A27E43A4A005332AD /* Animal.m */,
 				631C4F6127E43A23005332AD /* CreateClass */,
@@ -139,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F74D1D27EC1AAE0065B6B5 /* Dog+addSound.m in Sources */,
 				631C4F7427E49F3D005332AD /* TwoSum.m in Sources */,
+				84F74D1A27EC0A230065B6B5 /* Animal+TestCategory.m in Sources */,
 				631C4F7127E48139005332AD /* Cat.m in Sources */,
+				84F74D2227EC57250065B6B5 /* Cat+AddClimb.m in Sources */,
 				631C4F6E27E47FD0005332AD /* Dog.m in Sources */,
 				631C4F6327E43A23005332AD /* main.m in Sources */,
 				631C4F6B27E43A4A005332AD /* Animal.m in Sources */,
@@ -200,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
