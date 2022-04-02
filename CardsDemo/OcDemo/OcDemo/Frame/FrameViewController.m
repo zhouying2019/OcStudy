@@ -6,26 +6,37 @@
 //
 
 #import "FrameViewController.h"
+#import "FrameContentView.h"
 
-@interface FrameViewController ()
+@interface FrameViewController () <FrameContentViewDelegate>
+
+@property (nonatomic,strong) FrameContentView *contentView;
 
 @end
+
 
 @implementation FrameViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _contentView = [[FrameContentView alloc] initWithFrame: CGRectZero];
+    _contentView.backgroundColor = [UIColor greenColor];
+    _contentView.delegate = self;
+    
+    [self.view addSubview:_contentView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillLayoutSubviews {
+    
+    [super viewWillLayoutSubviews];
+    
+    _contentView.frame = self.view.bounds;
 }
-*/
 
+- (void) respondSelected:(UIButton *)btn{
+    
+    btn.selected = !btn.selected;
+}
 @end

@@ -9,7 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol FrameContentViewDelegate
+
+@required
+//触发事件方法
+-(void) respondSelected : (UIButton *)btn;
+
+@end
+
 @interface FrameContentView : UIView
+
+@property(nonatomic, weak) id delegate;
 
 @end
 

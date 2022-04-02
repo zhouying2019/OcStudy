@@ -9,4 +9,15 @@
 
 @implementation Card
 
+- (instancetype)init {
+    
+    self = [super init];
+    
+    if(self){
+        _contentImageUrl = @"card_before.png";
+        _isChosen = NO;
+    }
+    return self;
+}
+
 @end
