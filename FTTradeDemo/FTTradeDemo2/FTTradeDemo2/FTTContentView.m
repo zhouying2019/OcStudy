@@ -9,11 +9,6 @@
 
 @interface FTTContentView()
 
-@property (nonatomic,strong) FTTCardView *cardView1;
-@property (nonatomic,strong) FTTCardView *cardView2;
-@property (nonatomic,strong) FTTCardView *cardView3;
-@property (nonatomic,strong) FTTCardView *cardView4;
-@property (nonatomic,strong) FTTCardView *cardView5;
 @end
 
 @implementation FTTContentView
@@ -25,18 +20,41 @@
     if(self){
         self.cardView1 = [[FTTCardView alloc]initWithCard:cardArray[0]];
         [self addSubview:self.cardView1];
-        
+        self.cardView1.SelectedBlock = ^{
+            if(self.contentViewBlock){
+                self.contentViewBlock(cardArray[0],self.cardView1);
+            }
+        };
         self.cardView2 = [[FTTCardView alloc]initWithCard:cardArray[1]];
         [self addSubview:self.cardView2];
-        
+        self.cardView2.SelectedBlock = ^{
+            if(self.contentViewBlock){
+                self.contentViewBlock(cardArray[1],self.cardView2);
+            }
+        };
         self.cardView3 = [[FTTCardView alloc]initWithCard:cardArray[2]];
         [self addSubview:self.cardView3];
+        self.cardView3.SelectedBlock = ^{
+            if(self.contentViewBlock){
+                self.contentViewBlock(cardArray[2],self.cardView3);
+            }
+        };
         
         self.cardView4 = [[FTTCardView alloc]initWithCard:cardArray[3]];
         [self addSubview:self.cardView4];
+        self.cardView4.SelectedBlock = ^{
+            if(self.contentViewBlock){
+                self.contentViewBlock(cardArray[3],self.cardView4);
+            }
+        };
         
         self.cardView5 = [[FTTCardView alloc]initWithCard:cardArray[4]];
         [self addSubview:self.cardView5];
+        self.cardView5.SelectedBlock = ^{
+            if(self.contentViewBlock){
+                self.contentViewBlock(cardArray[4],self.cardView5);
+            }
+        };
     }
     return self;
 }
@@ -58,5 +76,5 @@
     self.cardView4.frame = CGRectMake(padding_bottom, margin + padding_top + height, width, height);
     self.cardView5.frame = CGRectMake(padding_bottom * 2 + width, margin + padding_top + height, width, height);
 }
-//ontap点击事件传到VC，VC更新Model属性，然后要updateview
+
 @end

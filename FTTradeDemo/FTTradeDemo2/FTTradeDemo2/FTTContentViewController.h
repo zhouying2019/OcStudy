@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FTTContentViewController : UIViewController
 
 @property (nonatomic,strong) NSMutableArray<Card *> *cardArrayModel;
-
+@property (nonatomic,copy)void (^contentViewBlock)();
 
 @end
 

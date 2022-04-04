@@ -9,7 +9,6 @@
 #import "Card.h"
 @interface FTTCardView()
 
-@property(nonatomic,strong)UIImageView *cardImage;
 @end
 @implementation FTTCardView
 - (instancetype)initWithCard:(Card *)cardModel {
@@ -18,9 +17,9 @@
     
     if(self){
         
-        UILabel *topTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
-        topTitle.text = cardModel.cardTitle;
-        [self addSubview:topTitle];
+        self.topTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
+        self.topTitle.text = cardModel.cardTitle;
+        [self addSubview:self.topTitle];
         
 
         UIImage *tmpImage = [UIImage imageNamed:cardModel.cardContentUrl];
@@ -31,9 +30,9 @@
         [self.cardImage addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSelected)]];
         [self addSubview:self.cardImage];
         
-        UILabel *bottomTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 65, 50, 50)];
-        bottomTitle.text = cardModel.cardBottomTitle;
-        [self addSubview:bottomTitle];
+        self.bottomTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 65, 50, 50)];
+        self.bottomTitle.text = cardModel.cardBottomTitle;
+        [self addSubview:self.bottomTitle];
     }
     return self;
 }

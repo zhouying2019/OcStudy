@@ -23,4 +23,15 @@
     return self;
 }
 
+- (void)turnOffCard{
+    
+    if(self.isSelected){
+        self.isSelected = !self.isSelected;
+        self.cardContentUrl = @"card_before.png";
+    }else{
+        self.isSelected = !self.isSelected;
+        self.cardContentUrl = self.cardTurnoffContentUrl;
+    }
+}
+
 @end
