@@ -11,13 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Card : NSObject
 
-@property (nonatomic,strong) NSString *cardTitle;
-@property (nonatomic,strong) NSString *cardContentUrl;
-@property (nonatomic,strong) NSString *cardTurnoffContentUrl;
-@property  BOOL isSelected;
-@property (nonatomic,strong) NSString *cardBottomTitle;
+@property (nonatomic, copy) NSString *cardTitle;
+@property (nonatomic, copy) NSString *cardContentUrl;
+@property (nonatomic, copy) NSString *cardTurnoffContentUrl;
+// TODO: zoeli zhelihaiweichuli
+@property (nonatomic, assign) BOOL isSelected;
+@property (nonatomic, copy) NSString *cardBottomTitle;
 
--(instancetype)initWithCardTurnoffContentUrl:(NSString *)cardTurnoffContentUrl CardTitle:(NSString *)cardTitle CardBottomTitle:(NSString *)cardBottomTitle;
+- (instancetype)initWithCardTurnoffContentUrl:(NSString *)cardTurnoffContentUrl CardTitle:(NSString *)cardTitle CardBottomTitle:(NSString *)cardBottomTitle;
 - (void)turnOffCard;
 @end
 

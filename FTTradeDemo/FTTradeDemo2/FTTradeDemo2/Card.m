@@ -9,7 +9,6 @@
 
 @implementation Card
 - (instancetype)initWithCardTurnoffContentUrl:(NSString *)cardTurnoffContentUrl CardTitle:(NSString *)cardTitle CardBottomTitle:(NSString *)cardBottomTitle {
-    
     self = [super init];
     
     if(self){
@@ -19,16 +18,13 @@
         self.cardBottomTitle = cardBottomTitle;
         self.isSelected = NO;
     }
-    
     return self;
 }
-
-- (void)turnOffCard{
-    
-    if(self.isSelected){
+- (void)turnOffCard {
+    if(self.isSelected) {
         self.isSelected = !self.isSelected;
         self.cardContentUrl = @"card_before.png";
-    }else{
+    } else {
         self.isSelected = !self.isSelected;
         self.cardContentUrl = self.cardTurnoffContentUrl;
     }
