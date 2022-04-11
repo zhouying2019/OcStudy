@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FDCB0827FFD9190094B073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB0727FFD9190094B073 /* AppDelegate.m */; };
+		84FDCB0B27FFD9190094B073 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB0A27FFD9190094B073 /* SceneDelegate.m */; };
+		84FDCB0E27FFD9190094B073 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB0D27FFD9190094B073 /* ViewController.m */; };
+		84FDCB1327FFD91A0094B073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FDCB1227FFD91A0094B073 /* Assets.xcassets */; };
+		84FDCB1627FFD91A0094B073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FDCB1427FFD91A0094B073 /* LaunchScreen.storyboard */; };
+		84FDCB1927FFD91A0094B073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB1827FFD91A0094B073 /* main.m */; };
+		84FDCB2327FFD91B0094B073 /* FTTradeDemo3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB2227FFD91B0094B073 /* FTTradeDemo3Tests.m */; };
+		84FDCB2D27FFD91B0094B073 /* FTTradeDemo3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB2C27FFD91B0094B073 /* FTTradeDemo3UITests.m */; };
+		84FDCB2F27FFD91B0094B073 /* FTTradeDemo3UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB2E27FFD91B0094B073 /* FTTradeDemo3UITestsLaunchTests.m */; };
+		84FDCB3D27FFDFB50094B073 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB3C27FFDFB50094B073 /* Card.m */; };
+		84FDCB4027FFE0470094B073 /* FTTradeCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB3F27FFE0470094B073 /* FTTradeCardView.m */; };
+		84FDCB4327FFE16D0094B073 /* FTTradeContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB4227FFE16D0094B073 /* FTTradeContentTableViewController.m */; };
+		84FDCB4628001D390094B073 /* FTTradeCardViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB4528001D390094B073 /* FTTradeCardViewCellTableViewCell.m */; };
+		84FDCB4928002D460094B073 /* SimpleCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDCB4828002D460094B073 /* SimpleCardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FDCB1F27FFD91B0094B073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FDCAFB27FFD9190094B073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FDCB0227FFD9190094B073;
+			remoteInfo = FTTradeDemo3;
+		};
+		84FDCB2927FFD91B0094B073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FDCAFB27FFD9190094B073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FDCB0227FFD9190094B073;
+			remoteInfo = FTTradeDemo3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84FDCB0327FFD9190094B073 /* FTTradeDemo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTTradeDemo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FDCB0627FFD9190094B073 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84FDCB0727FFD9190094B073 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84FDCB0927FFD9190094B073 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		84FDCB0A27FFD9190094B073 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		84FDCB0C27FFD9190094B073 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84FDCB0D27FFD9190094B073 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84FDCB1227FFD91A0094B073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FDCB1527FFD91A0094B073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FDCB1727FFD91A0094B073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FDCB1827FFD91A0094B073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FDCB1E27FFD91B0094B073 /* FTTradeDemo3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTTradeDemo3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FDCB2227FFD91B0094B073 /* FTTradeDemo3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeDemo3Tests.m; sourceTree = "<group>"; };
+		84FDCB2827FFD91B0094B073 /* FTTradeDemo3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTTradeDemo3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FDCB2C27FFD91B0094B073 /* FTTradeDemo3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeDemo3UITests.m; sourceTree = "<group>"; };
+		84FDCB2E27FFD91B0094B073 /* FTTradeDemo3UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeDemo3UITestsLaunchTests.m; sourceTree = "<group>"; };
+		84FDCB3B27FFDFB50094B073 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		84FDCB3C27FFDFB50094B073 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		84FDCB3E27FFE0470094B073 /* FTTradeCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTTradeCardView.h; sourceTree = "<group>"; };
+		84FDCB3F27FFE0470094B073 /* FTTradeCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeCardView.m; sourceTree = "<group>"; };
+		84FDCB4127FFE16D0094B073 /* FTTradeContentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTTradeContentTableViewController.h; sourceTree = "<group>"; };
+		84FDCB4227FFE16D0094B073 /* FTTradeContentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeContentTableViewController.m; sourceTree = "<group>"; };
+		84FDCB4428001D390094B073 /* FTTradeCardViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTTradeCardViewCellTableViewCell.h; sourceTree = "<group>"; };
+		84FDCB4528001D390094B073 /* FTTradeCardViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTradeCardViewCellTableViewCell.m; sourceTree = "<group>"; };
+		84FDCB4728002D460094B073 /* SimpleCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleCardView.h; sourceTree = "<group>"; };
+		84FDCB4828002D460094B073 /* SimpleCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FDCB0027FFD9190094B073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB1B27FFD91B0094B073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB2527FFD91B0094B073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FDCAFA27FFD9190094B073 = {
+			isa = PBXGroup;
+			children = (
+				84FDCB0527FFD9190094B073 /* FTTradeDemo3 */,
+				84FDCB2127FFD91B0094B073 /* FTTradeDemo3Tests */,
+				84FDCB2B27FFD91B0094B073 /* FTTradeDemo3UITests */,
+				84FDCB0427FFD9190094B073 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FDCB0427FFD9190094B073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FDCB0327FFD9190094B073 /* FTTradeDemo3.app */,
+				84FDCB1E27FFD91B0094B073 /* FTTradeDemo3Tests.xctest */,
+				84FDCB2827FFD91B0094B073 /* FTTradeDemo3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FDCB0527FFD9190094B073 /* FTTradeDemo3 */ = {
+			isa = PBXGroup;
+			children = (
+				84FDCB0627FFD9190094B073 /* AppDelegate.h */,
+				84FDCB0727FFD9190094B073 /* AppDelegate.m */,
+				84FDCB0927FFD9190094B073 /* SceneDelegate.h */,
+				84FDCB0A27FFD9190094B073 /* SceneDelegate.m */,
+				84FDCB0C27FFD9190094B073 /* ViewController.h */,
+				84FDCB0D27FFD9190094B073 /* ViewController.m */,
+				84FDCB1227FFD91A0094B073 /* Assets.xcassets */,
+				84FDCB1427FFD91A0094B073 /* LaunchScreen.storyboard */,
+				84FDCB1727FFD91A0094B073 /* Info.plist */,
+				84FDCB1827FFD91A0094B073 /* main.m */,
+				84FDCB3B27FFDFB50094B073 /* Card.h */,
+				84FDCB3C27FFDFB50094B073 /* Card.m */,
+				84FDCB3E27FFE0470094B073 /* FTTradeCardView.h */,
+				84FDCB3F27FFE0470094B073 /* FTTradeCardView.m */,
+				84FDCB4127FFE16D0094B073 /* FTTradeContentTableViewController.h */,
+				84FDCB4227FFE16D0094B073 /* FTTradeContentTableViewController.m */,
+				84FDCB4428001D390094B073 /* FTTradeCardViewCellTableViewCell.h */,
+				84FDCB4528001D390094B073 /* FTTradeCardViewCellTableViewCell.m */,
+				84FDCB4728002D460094B073 /* SimpleCardView.h */,
+				84FDCB4828002D460094B073 /* SimpleCardView.m */,
+			);
+			path = FTTradeDemo3;
+			sourceTree = "<group>";
+		};
+		84FDCB2127FFD91B0094B073 /* FTTradeDemo3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84FDCB2227FFD91B0094B073 /* FTTradeDemo3Tests.m */,
+			);
+			path = FTTradeDemo3Tests;
+			sourceTree = "<group>";
+		};
+		84FDCB2B27FFD91B0094B073 /* FTTradeDemo3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				84FDCB2C27FFD91B0094B073 /* FTTradeDemo3UITests.m */,
+				84FDCB2E27FFD91B0094B073 /* FTTradeDemo3UITestsLaunchTests.m */,
+			);
+			path = FTTradeDemo3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FDCB0227FFD9190094B073 /* FTTradeDemo3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FDCB3227FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3" */;
+			buildPhases = (
+				84FDCAFF27FFD9190094B073 /* Sources */,
+				84FDCB0027FFD9190094B073 /* Frameworks */,
+				84FDCB0127FFD9190094B073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTTradeDemo3;
+			productName = FTTradeDemo3;
+			productReference = 84FDCB0327FFD9190094B073 /* FTTradeDemo3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FDCB1D27FFD91B0094B073 /* FTTradeDemo3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FDCB3527FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3Tests" */;
+			buildPhases = (
+				84FDCB1A27FFD91B0094B073 /* Sources */,
+				84FDCB1B27FFD91B0094B073 /* Frameworks */,
+				84FDCB1C27FFD91B0094B073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FDCB2027FFD91B0094B073 /* PBXTargetDependency */,
+			);
+			name = FTTradeDemo3Tests;
+			productName = FTTradeDemo3Tests;
+			productReference = 84FDCB1E27FFD91B0094B073 /* FTTradeDemo3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84FDCB2727FFD91B0094B073 /* FTTradeDemo3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FDCB3827FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3UITests" */;
+			buildPhases = (
+				84FDCB2427FFD91B0094B073 /* Sources */,
+				84FDCB2527FFD91B0094B073 /* Frameworks */,
+				84FDCB2627FFD91B0094B073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FDCB2A27FFD91B0094B073 /* PBXTargetDependency */,
+			);
+			name = FTTradeDemo3UITests;
+			productName = FTTradeDemo3UITests;
+			productReference = 84FDCB2827FFD91B0094B073 /* FTTradeDemo3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FDCAFB27FFD9190094B073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					84FDCB0227FFD9190094B073 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					84FDCB1D27FFD91B0094B073 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 84FDCB0227FFD9190094B073;
+					};
+					84FDCB2727FFD91B0094B073 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 84FDCB0227FFD9190094B073;
+					};
+				};
+			};
+			buildConfigurationList = 84FDCAFE27FFD9190094B073 /* Build configuration list for PBXProject "FTTradeDemo3" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FDCAFA27FFD9190094B073;
+			productRefGroup = 84FDCB0427FFD9190094B073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FDCB0227FFD9190094B073 /* FTTradeDemo3 */,
+				84FDCB1D27FFD91B0094B073 /* FTTradeDemo3Tests */,
+				84FDCB2727FFD91B0094B073 /* FTTradeDemo3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FDCB0127FFD9190094B073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDCB1627FFD91A0094B073 /* LaunchScreen.storyboard in Resources */,
+				84FDCB1327FFD91A0094B073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB1C27FFD91B0094B073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB2627FFD91B0094B073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FDCAFF27FFD9190094B073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDCB3D27FFDFB50094B073 /* Card.m in Sources */,
+				84FDCB0E27FFD9190094B073 /* ViewController.m in Sources */,
+				84FDCB0827FFD9190094B073 /* AppDelegate.m in Sources */,
+				84FDCB4928002D460094B073 /* SimpleCardView.m in Sources */,
+				84FDCB4628001D390094B073 /* FTTradeCardViewCellTableViewCell.m in Sources */,
+				84FDCB4027FFE0470094B073 /* FTTradeCardView.m in Sources */,
+				84FDCB1927FFD91A0094B073 /* main.m in Sources */,
+				84FDCB0B27FFD9190094B073 /* SceneDelegate.m in Sources */,
+				84FDCB4327FFE16D0094B073 /* FTTradeContentTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB1A27FFD91B0094B073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDCB2327FFD91B0094B073 /* FTTradeDemo3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDCB2427FFD91B0094B073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDCB2F27FFD91B0094B073 /* FTTradeDemo3UITestsLaunchTests.m in Sources */,
+				84FDCB2D27FFD91B0094B073 /* FTTradeDemo3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FDCB2027FFD91B0094B073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FDCB0227FFD9190094B073 /* FTTradeDemo3 */;
+			targetProxy = 84FDCB1F27FFD91B0094B073 /* PBXContainerItemProxy */;
+		};
+		84FDCB2A27FFD91B0094B073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FDCB0227FFD9190094B073 /* FTTradeDemo3 */;
+			targetProxy = 84FDCB2927FFD91B0094B073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84FDCB1427FFD91A0094B073 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FDCB1527FFD91A0094B073 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FDCB3027FFD91B0094B073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84FDCB3127FFD91B0094B073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FDCB3327FFD91B0094B073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FTTradeDemo3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FDCB3427FFD91B0094B073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FTTradeDemo3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FDCB3627FFD91B0094B073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTTradeDemo3.app/FTTradeDemo3";
+			};
+			name = Debug;
+		};
+		84FDCB3727FFD91B0094B073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTTradeDemo3.app/FTTradeDemo3";
+			};
+			name = Release;
+		};
+		84FDCB3927FFD91B0094B073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FTTradeDemo3;
+			};
+			name = Debug;
+		};
+		84FDCB3A27FFD91B0094B073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DA4NCX85L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhouying.FTTradeDemo3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FTTradeDemo3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FDCAFE27FFD9190094B073 /* Build configuration list for PBXProject "FTTradeDemo3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FDCB3027FFD91B0094B073 /* Debug */,
+				84FDCB3127FFD91B0094B073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FDCB3227FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FDCB3327FFD91B0094B073 /* Debug */,
+				84FDCB3427FFD91B0094B073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FDCB3527FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FDCB3627FFD91B0094B073 /* Debug */,
+				84FDCB3727FFD91B0094B073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FDCB3827FFD91B0094B073 /* Build configuration list for PBXNativeTarget "FTTradeDemo3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FDCB3927FFD91B0094B073 /* Debug */,
+				84FDCB3A27FFD91B0094B073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FDCAFB27FFD9190094B073 /* Project object */;
+}
