@@ -69,7 +69,6 @@
         }
     
     [cell.cardView setCardView:self.cardModelArray[indexPath.row]];
-    
     [self.vc tableView:tableView cellForRowAtIndexPath:indexPath];
     
     __weak FTTradeContentTableViewController *weakSelf = self;
