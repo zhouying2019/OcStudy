@@ -24,7 +24,6 @@
         _cardImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"card_before.png"]];
         [_cardImage addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSelected)]];
         [_cardImage setUserInteractionEnabled:YES];
-//        [_cardImage setMultipleTouchEnabled:YES];
     }
     return _cardImage;
 }

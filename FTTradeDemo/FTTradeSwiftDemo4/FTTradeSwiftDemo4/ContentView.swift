@@ -51,7 +51,7 @@ class ContentView : UIView {
             if(index < 3) {
                 self.cardViewArray[index].frame = CGRect(x: margin + CGFloat(index) * padding_top + CGFloat(index) * width, y: margin, width: width, height: height)
             } else {
-                self.cardViewArray[index].frame = CGRect(x: padding_bottom + (width + padding_bottom) * CGFloat((index - 3)), y: margin + padding_top + height, width: width, height: height)
+                cardViewArray[index].frame = CGRect(x: padding_bottom + (width + padding_bottom) * CGFloat((index - 3)), y: margin + padding_top + height, width: width, height: height)
             }
         }
     }
